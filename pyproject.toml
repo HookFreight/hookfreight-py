@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hookfreight"
+version = "0.1.0"
+description = "Official Python SDK for HookFreight"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+authors = [{ name = "HookFreight", email = "support@hookfreight.com" }]
+requires-python = ">=3.9"
+keywords = ["hookfreight", "webhook", "sdk", "api", "python"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Internet :: WWW/HTTP",
+  "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://docs.hookfreight.com"
+Repository = "https://github.com/hookfreight/hookfreight-python"
+Issues = "https://github.com/hookfreight/hookfreight-python/issues"
+
+[tool.setuptools]
+packages = ["hookfreight", "hookfreight.resources"]
+
+[tool.setuptools.package-data]
+hookfreight = ["py.typed"]
