@@ -5,10 +5,10 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "hookfreight"
 version = "0.1.0"
-description = "Official Python SDK for HookFreight"
+description = "Official Python SDK for Hookfreight"
 readme = "README.md"
 license = { text = "Apache-2.0" }
-authors = [{ name = "HookFreight", email = "support@hookfreight.com" }]
+authors = [{ name = "Hookfreight", email = "support@hookfreight.com" }]
 requires-python = ">=3.9"
 keywords = ["hookfreight", "webhook", "sdk", "api", "python"]
 classifiers = [
@@ -27,8 +27,8 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://docs.hookfreight.com"
-Repository = "https://github.com/hookfreight/hookfreight-python"
-Issues = "https://github.com/hookfreight/hookfreight-python/issues"
+Repository = "https://github.com/hookfreight/hookfreight-py"
+Issues = "https://github.com/hookfreight/hookfreight-py/issues"
 
 [tool.setuptools]
 packages = ["hookfreight", "hookfreight.resources"]
