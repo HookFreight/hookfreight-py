@@ -6,9 +6,9 @@ Run: HOOKFREIGHT_API_KEY=hf_sk_... python examples/retry_failed_deliveries.py
 import datetime as dt
 import os
 
-from hookfreight import HookFreight
+from hookfreight import Hookfreight
 
-hf = HookFreight(api_key=os.getenv("HOOKFREIGHT_API_KEY"))
+hf = Hookfreight(api_key=os.getenv("HOOKFREIGHT_API_KEY"))
 
 
 def main() -> None:

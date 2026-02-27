@@ -9,10 +9,10 @@ DEFAULT_BASE_URL = "https://api.hookfreight.com/v1"
 DEFAULT_TIMEOUT = 30_000
 
 
-class HookFreight:
-    """HookFreight Python SDK client.
+class Hookfreight:
+    """Hookfreight Python SDK client.
 
-    Supports both HookFreight Cloud (with API key) and self-hosted instances
+    Supports both Hookfreight Cloud (with API key) and self-hosted instances
     (with custom base URL).
     """
 

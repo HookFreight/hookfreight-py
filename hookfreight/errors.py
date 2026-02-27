@@ -3,11 +3,11 @@ from __future__ import annotations
 from typing import Any, Optional
 
 
-class HookFreightError(Exception):
-    """Base error class for all HookFreight SDK errors."""
+class HookfreightError(Exception):
+    """Base error class for all Hookfreight SDK errors."""
 
 
-class APIError(HookFreightError):
+class APIError(HookfreightError):
     """Raised when the API returns a non-2xx response."""
 
     def __init__(self, status: int, body: Any):
@@ -46,7 +46,7 @@ class PermissionError(APIError):
         super().__init__(403, body)
 
 
-class ConnectionError(HookFreightError):
+class ConnectionError(HookfreightError):
     """Raised for timeouts and network-level request failures."""
 
     def __init__(self, message: str, cause: Optional[BaseException] = None):

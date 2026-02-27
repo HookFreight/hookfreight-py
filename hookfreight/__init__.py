@@ -1,17 +1,17 @@
-from .client import HookFreight
+from .client import Hookfreight
 from .errors import (
     APIError,
     AuthenticationError,
     ConnectionError,
-    HookFreightError,
+    HookfreightError,
     NotFoundError,
     PermissionError,
     ValidationError,
 )
 
 __all__ = [
-    "HookFreight",
-    "HookFreightError",
+    "Hookfreight",
+    "HookfreightError",
     "APIError",
     "NotFoundError",
     "ValidationError",

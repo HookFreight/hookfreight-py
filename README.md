@@ -1,6 +1,6 @@
 # hookfreight
 
-Official Python SDK for **[HookFreight](https://hookfreight.com)**.
+Official Python SDK for **[Hookfreight](https://docs.hookfreight.com)**.
 
 Capture, inspect, replay, and reliably deliver webhooks with full visibility.
 
@@ -12,12 +12,12 @@ pip install hookfreight
 
 ## Quick Start
 
-### HookFreight Cloud
+### Hookfreight Cloud
 
 ```python
-from hookfreight import HookFreight
+from hookfreight import Hookfreight
 
-hf = HookFreight(api_key="hf_sk_...")
+hf = Hookfreight(api_key="hf_sk_...")
 
 result = hf.deliveries.list({"limit": 10})
 print(result["deliveries"])
@@ -26,25 +26,25 @@ print(result["deliveries"])
 ### Self-Hosted
 
 ```python
-from hookfreight import HookFreight
+from hookfreight import Hookfreight
 
-hf = HookFreight(base_url="http://localhost:3030/api/v1")
+hf = Hookfreight(base_url="http://localhost:3030/api/v1")
 ```
 
 ## Configuration
 
 | Option | Type | Default | Description |
 |--------|------|---------|-------------|
-| `api_key` | `str` | — | API key for HookFreight Cloud. Optional for self-hosted. |
+| `api_key` | `str` | — | API key for Hookfreight Cloud. Optional for self-hosted. |
 | `base_url` | `str` | `https://api.hookfreight.com/v1` | Base URL of the API. Override for self-hosted. |
 | `timeout` | `int` | `30000` | Request timeout in milliseconds. |
 
 ## Usage
 
 ```python
-from hookfreight import HookFreight
+from hookfreight import Hookfreight
 
-hf = HookFreight(api_key="hf_sk_...")
+hf = Hookfreight(api_key="hf_sk_...")
 
 app = hf.apps.create({"name": "My App"})
 endpoint = hf.endpoints.create({
@@ -63,9 +63,9 @@ print(stats)
 ## Error Handling
 
 ```python
-from hookfreight import HookFreight, NotFoundError, ValidationError, ConnectionError
+from hookfreight import Hookfreight, NotFoundError, ValidationError, ConnectionError
 
-hf = HookFreight(api_key="hf_sk_...")
+hf = Hookfreight(api_key="hf_sk_...")
 
 try:
     hf.apps.get("app_nonexistent")

@@ -1,11 +1,11 @@
-"""Basic usage of the HookFreight Python SDK.
+"""Basic usage of the Hookfreight Python SDK.
 
 Run: HOOKFREIGHT_API_KEY=hf_sk_... python examples/basic_usage.py
 """
 
-import os
+import osHookfreight
 
-from hookfreight import HookFreight
+from Hookfreight import HookFreight
 
 hf = HookFreight(
     api_key=os.getenv("HOOKFREIGHT_API_KEY"),

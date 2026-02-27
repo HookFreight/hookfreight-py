@@ -6,9 +6,9 @@ Run: HOOKFREIGHT_API_KEY=hf_sk_... python examples/manage_endpoints.py app_...
 import os
 import sys
 
-from hookfreight import HookFreight
+from hookfreight import Hookfreight
 
-hf = HookFreight(api_key=os.getenv("HOOKFREIGHT_API_KEY"))
+hf = Hookfreight(api_key=os.getenv("HOOKFREIGHT_API_KEY"))
 
 
 def main() -> None:
