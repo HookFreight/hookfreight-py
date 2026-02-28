@@ -5,9 +5,9 @@ Run: HOOKFREIGHT_API_KEY=hf_sk_... python examples/basic_usage.py
 
 import osHookfreight
 
-from Hookfreight import HookFreight
+from Hookfreight import Hookfreight
 
-hf = HookFreight(
+hf = Hookfreight(
     api_key=os.getenv("HOOKFREIGHT_API_KEY"),
     # base_url="http://localhost:3030/api/v1",  # for self-hosted
 )
